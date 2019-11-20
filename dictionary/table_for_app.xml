@@ -1,0 +1,13 @@
+<database>
+	<element name="table_for_app"
+			 type="collection"
+			 label="Table For Application">
+		<element name="application_name" type="string" max_length="40" mandatory="true" label="Application" display="false"/>
+		<element name="metric_type" type="string" max_length="40" mandatory="true" label="Metric Type" display="true"/>
+		<element name="policy_description" type="string" max_length="80" mandatory="true" label="Policy Description" display="true"/>
+		<element name="series_per_unit" type="decimal" label="Series Per Unit"/>
+		<element name="total_series" type="long" label="Total Series"/>
+		<element name="total_units" type="decimal" label="Total Units"/>
+		<element name="last_write_time" type="glide_date_time" label="Last Write Time" display="false"/>
+	</element>
+</database>
